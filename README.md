@@ -19,10 +19,71 @@ Step 6: Plot the sequence with x-label and y-label with suitable title
 Step 7: Terminate the program.
 
 ## PROGRAM: 
+clc; % clear screen
+
+clear all; % clear screen
+
+close all; % close all figure windows
+
+% INPUT SEQUENCE
+
+a=input('enter the starting x(n)');
+
+x=input('enter the x(n) sequence');
+
+n=a:1:length(x)+a-1;
+
+figure(1);
+
+stem(n,x);
+
+xlabel('time');
+
+ylabel('amplitude');
+
+title('input sequence');
+
+% IMPULSE SEQUENCE
+
+b=input('enter the starting h(n)');
+
+y=input('enter the h(n) sequence');
+
+m=b:1:length(y)+b-1;
+
+figure(2);
+
+stem(m,y);
+
+xlabel('time');
+
+ylabel('amplitude');
+
+title('impulse response')
+
+% LINEAR CONVOLUTION
+
+z=conv2(x,y);
+
+n1=a+b:1:length (z)+a+b-1;
+
+figure(3);
+
+stem(n1,z);
+
+xlabel('time');
+
+ylabel('amplitude');
+
+title('linear convolution');
 
 
 ## OUTPUT:
-
+<img width="641" height="613" alt="image" src="https://github.com/user-attachments/assets/158185c1-5eae-4e1e-ad7d-9b87a7f8384d" />
+<img width="663" height="457" alt="image" src="https://github.com/user-attachments/assets/fc501d66-763b-4f0c-9230-322ade41813b" />
+<img width="688" height="628" alt="image" src="https://github.com/user-attachments/assets/bf797ded-3cb8-4d20-957a-46277e9cc028" />
 
 ## RESULT:
+<img width="1280" height="572" alt="image" src="https://github.com/user-attachments/assets/8864aad5-e76e-4017-a614-f8b3c5e0feda" />
+
 
