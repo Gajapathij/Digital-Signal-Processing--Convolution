@@ -87,3 +87,4 @@ title('linear convolution');
 <img width="1280" height="572" alt="image" src="https://github.com/user-attachments/assets/8864aad5-e76e-4017-a614-f8b3c5e0feda" />
 
 
+
